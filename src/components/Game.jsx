@@ -63,7 +63,12 @@ const Game = () => {
     </div>
   ));
 
-  return <div className="game">{renderedPanels}</div>;
+  return (
+    <div className="game">
+      <h1>.env variable: {import.meta.env.VITE_SECRET}</h1>
+      {renderedPanels}
+    </div>
+  );
 };
 
 export default Game;
